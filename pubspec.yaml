@@ -24,6 +24,10 @@ dependencies:
   get:
   get_storage:
 
+  ## Splash Screen
+
+  flutter_native_splash:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -37,10 +41,10 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/fonts
-    - assets/icons
-    - assets/images
-    - assets/logos
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/
+    - assets/logos/
 
   fonts:
     - family: Poppins
