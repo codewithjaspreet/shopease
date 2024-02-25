@@ -14,10 +14,15 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   iconsax: ^0.0.8
+  http:
+  intl:
+  logger:
+  url_launcher:
 
   ## State Management
 
   get:
+  get_storage:
 
 dev_dependencies:
   flutter_test:
@@ -35,6 +40,7 @@ flutter:
     - assets/fonts
     - assets/icons
     - assets/images
+    - assets/logos
 
   fonts:
     - family: Poppins
