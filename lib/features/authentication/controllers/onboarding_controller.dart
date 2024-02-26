@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
+import 'package:shopease/features/authentication/screens/login/screens/login.dart';
 
 class OnBoardingController extends GetxController {
   // instance of OnBoardingController
@@ -37,7 +38,6 @@ class OnBoardingController extends GetxController {
   }
 
   skipPage() {
-    currentPageIndex.value = 2;
-    pageController.jumpToPage(currentPageIndex.value);
+    Get.to(() => LoginScreen());
   }
 }
