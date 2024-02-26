@@ -4,8 +4,8 @@ import 'package:shopease/utils/constants/colors.dart';
 import 'package:shopease/utils/constants/image_strings.dart';
 import 'package:shopease/utils/constants/sizes.dart';
 
-class LoginOptions extends StatelessWidget {
-  const LoginOptions({
+class SocialButtons extends StatelessWidget {
+  const SocialButtons({
     super.key,
   });
 

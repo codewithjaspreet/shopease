@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopease/common/styles/spacing_styles.dart';
-import 'package:shopease/features/authentication/screens/login/widgets/login_buttons.dart';
+import 'package:shopease/common/widgets/divider_component.dart';
 import 'package:shopease/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:shopease/features/authentication/screens/login/widgets/login_header.dart';
-import 'package:shopease/features/authentication/screens/login/widgets/login_options.dart';
+import 'package:shopease/common/widgets/social_buttons.dart';
 import 'package:shopease/utils/constants/colors.dart';
 import 'package:shopease/utils/constants/image_strings.dart';
 import 'package:shopease/utils/constants/sizes.dart';
@@ -26,11 +26,13 @@ class LoginScreen extends StatelessWidget {
               children: [
                 LoginHeader(isDark: isDark),
                 const LoginForm(),
-                LoginButtons(isDark: isDark),
+                const DividerComponent(
+                  dividerText: TTexts.orSignInWith,
+                ),
                 const SizedBox(
                   height: TSizes.spaceBtwSections,
                 ),
-                const LoginOptions()
+                const SocialButtons()
               ],
             )),
       ),

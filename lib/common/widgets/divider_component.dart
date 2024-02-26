@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:shopease/utils/constants/colors.dart';
 import 'package:shopease/utils/constants/text_strings.dart';
+import 'package:shopease/utils/helpers/helper_functions.dart';
 
-class LoginButtons extends StatelessWidget {
-  const LoginButtons({
+class DividerComponent extends StatelessWidget {
+  const DividerComponent({
     super.key,
-    required this.isDark,
+    required this.dividerText,
   });
 
-  final bool isDark;
+  final String dividerText;
 
   @override
   Widget build(BuildContext context) {
+    final isDark = THelperFunctions.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -25,7 +27,7 @@ class LoginButtons extends StatelessWidget {
           ),
         ),
         Text(
-          TTexts.orSignInWith,
+          dividerText,
           style: Theme.of(context).textTheme.labelMedium,
         ),
         Flexible(
