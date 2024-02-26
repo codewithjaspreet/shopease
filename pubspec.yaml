@@ -7,32 +7,28 @@ environment:
   sdk: ">=3.2.3 <4.0.0"
 
 dependencies:
+  ## icons used
+  cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
 
-  ## icons used
-
-  cupertino_icons: ^1.0.2
-  iconsax: ^0.0.8
-  http:
-  intl:
-  logger:
-  url_launcher:
+  ## Splash Screen
+  flutter_native_splash: null
 
   ## State Management
-
-  get:
-  get_storage:
-
-  ## Splash Screen
-
-  flutter_native_splash:
+  get: null
+  get_storage: null
+  http: null
+  iconsax: ^0.0.8
+  intl: null
+  logger: null
+  url_launcher: null
+  smooth_page_indicator: ^1.1.0
 
 dev_dependencies:
+  flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-
-  flutter_lints: ^2.0.0
 
 flutter:
   # The following line ensures that the Material Icons font is
@@ -43,7 +39,12 @@ flutter:
   assets:
     - assets/fonts/
     - assets/icons/
-    - assets/images/
+    - assets/images/animations/
+    - assets/images/banners/
+    - assets/images/content/
+    - assets/images/on_boarding_images/
+    - assets/images/products/
+    - assets/images/reviews/
     - assets/logos/
 
   fonts:
